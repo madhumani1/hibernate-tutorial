@@ -24,6 +24,15 @@ public class TestJdbc {
 			System.out.println("Connecting to database: "+jdbcUrl);
 			Connection myConn = DriverManager.getConnection(jdbcUrl, user, passwd);
 			System.out.println("Connection successful!!!");
+			myConn.close();
+			
+			jdbcUrl = "jdbc:mysql://localhost:3306/hb_employee_tracker?useSSL=false";	// useSSL=false is to get rid of SSL warning
+			user="hbemployee";
+			passwd="hbemployee";
+			System.out.println("\n\nConnecting to database: "+jdbcUrl);
+			myConn = DriverManager.getConnection(jdbcUrl, user, passwd);
+			System.out.println("Connection successful!!!");
+			myConn.close();
 			
 		}	catch (Exception e) {
 			e.printStackTrace();
