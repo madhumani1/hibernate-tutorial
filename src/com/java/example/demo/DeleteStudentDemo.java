@@ -51,9 +51,9 @@ public class DeleteStudentDemo {
 			// session.delete(myStudent);
 			
 			// delete student id=2
-			System.out.println("Deleting student id=7");
+			System.out.println("Deleting student id=1");
 			
-			session.createQuery("delete from Student where id=7").executeUpdate();
+			session.createQuery("delete from Student where id=1").executeUpdate();
 			
 			// commit the transaction
 			session.getTransaction().commit();

@@ -37,7 +37,7 @@ public class CreateStudentDemo {
 		try	{
 				// now use the session object to save/retrieve Java objects
 			// create a student object
-			Student tempStudent = new Student("Satvika", "Mani","Satvika.Madhukar@gmail.com");
+			Student tempStudent = new Student("Madhukar", "Mani","madhumani1@gmail.com");
 			
 			// start transaction
 			session.beginTransaction();
